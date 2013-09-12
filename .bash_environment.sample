@@ -1,0 +1,4 @@
+export PATH="/Applications/MAMP/Library/bin:/Applications/MAMP/bin:$PATH:/usr/local/share/npm/bin"
+
+# The default editor of your choice
+export EDITOR=vim
