@@ -68,8 +68,8 @@ xterm*|rxvt*)
 esac
 
 # Enable color support of ls and also add handy aliases
-if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
-    eval "`dircolors -b`"
+[ -x /usr/bin/dircolors ] && eval "`dircolors -b`"
+if [ "$TERM" != "dumb" ]; then
     alias ls='ls --color=auto'
     alias ll='ls -l'
     alias la='ls -A'
